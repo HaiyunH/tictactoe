@@ -14,15 +14,20 @@ body {
 }
 
 .container {
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between the board and QA section */
 }
+
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, 1fr); /* Adjust for a 3x3 grid */
     gap: 5px;
-    margin: 20px auto;
+    align-self: start; /* Keeps the grid aligned at the top */
 }
+
 
 .cell {
     width: 100px;
@@ -50,12 +55,14 @@ body {
 
 
 .qa-section {
-    margin-top: 30px;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease; /* Smooth fade-in */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px; /* Adjust as needed */
+    min-height: 150px;
+    overflow-wrap: break-word; /* Ensure long questions wrap */
 }
-
 
 
 .answer-btn, .right-btn, .wrong-btn {

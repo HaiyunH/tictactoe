@@ -15,27 +15,27 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentCellIndex = null;
 
     const questions = [
-        "What is the capital of France?",
-        "What is 2 + 2?",
-        "Who wrote 'Hamlet'?",
-        "What color is the sky?",
-        "What is the boiling point of water?",
-        "What is 5 x 5?",
-        "Who discovered penicillin?",
-        "What is the largest planet?",
-        "What is the square root of 64?"
+        "Team B underestimated the nuclear threat of the Soviets",
+        "Who led the scientist community to oppose the Strategic Defence Initiative?",
+        "What does TTAPS stand for, or referring to?",
+        "Both Jastrow and Seitz attacked studies on nuclear winter, saying they are misleading and controlled by liberal agenda.",
+        "George C. Marshall Institute denounced SDI using ‘tobacco strategy’",
+        "What is another name for the Strategic Defence Initiative?",
+        "Who published a worst case scenario describing the result of nuclear fallout as a ‘nuclear winter’ in Parade and Foreign Affairs?",
+        "How does Jastrow take advantage of Fairness Doctrine?",
+        "Is the Nuclear Winter Conclusion supported by multiple simulations/studies?"
     ];
 
     const answers = [
-        "Paris",
-        "4",
-        "William Shakespeare",
-        "Blue",
-        "100°C",
-        "25",
-        "Alexander Fleming",
-        "Jupiter",
-        "8"
+        "False",
+        "Carl Sagan",
+        "Page 50, the nuclear winter paper or the initials of its authors",
+        "True",
+        "False",
+        "Star Wars",
+        "Carl Sagan",
+        "Journalists shall give equal exposure to both sides of views",
+        "True"
     ];
 
     function handleCellClick(event) {
